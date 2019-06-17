@@ -15,7 +15,7 @@ A Checkout System that helps Seek Asia manage billing it's clients.
 First of all you have to clone this repository or download zip file and extract the content to your preferred location
 
 ```console
-$ git clone https://github.com/wupmemo/ads-checkout-task
+$ git clone https://github.com/wupmemo/ads-checkout-task.git
 ```
 
 Change to created directory
@@ -26,12 +26,12 @@ $ cd ads-checkout-task
 
 After you make sure Docker is installed correctly just run command
 ```console
-$ docker run node
+$ docker-compose up --build
 ```
 
 Finnaly you can open your browser and type
 ```console
-http://localhost:8080
+http://localhost:3000
 ```
 
 ## Contact
