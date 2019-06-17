@@ -1,0 +1,22 @@
+{
+  "name": "ads-checkout",
+  "version": "1.0.0",
+  "description": "Ads Checkout System for Seek Asia Inteview Task",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mohammed Fouad <e_memo90@hotmail.com>",
+  "license": "ISC",
+  "homepage": "https://github.com/wupmemo/ads-checkout-task#readme",
+  "dependencies": {
+    "body-parser": "^1.16.1",
+    "ejs": "^2.5.5",
+    "express": "^4.14.1",
+    "express-validator": "^3.1.2"
+  },
+  "devDependencies": {
+    "mocha": "^6.1.4",
+    "supertest": "^3.0.0"
+  }
+}

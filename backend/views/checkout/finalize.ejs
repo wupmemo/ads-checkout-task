@@ -1,0 +1,29 @@
+<% include ../includes/header.ejs %>
+
+<h2 class="basic-title">Summary</h2>
+
+<div class="well">
+    <h4><strong>Customer: </strong><%= selectedCustomer.name %></h4>
+    <table class="table table-condensed table-bordered table-striped table-hover">
+        <thead>
+        <tr>
+            <td>ID</td>
+            <td>Name</td>
+            <td>Quantity</td>
+        </tr>
+        </thead>
+        <tbody>
+          <% products.map(function(product){ %>
+            <tr>
+                <td><%= product.id %></td>
+                <td><%= product.name %></td>
+                <td><%= product.quantity %></td>
+            </tr>
+          <% }) %>
+        </tbody>
+    </table>
+    <h4><strong>Total Amount: </strong><mark>$ <%= total %></mark></h4>
+</div>
+
+
+<% include ../includes/footer.ejs %>

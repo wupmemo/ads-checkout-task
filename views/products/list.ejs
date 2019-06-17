@@ -1,0 +1,25 @@
+<% include ../includes/header.ejs %>
+
+<h3 class="basic-title text-muted">List of Ad Packages:</h3>
+<div class="well">
+    <table class="table table-condensed table-bordered table-striped table-hover">
+        <thead>
+        <tr>
+            <td>ID</td>
+            <td>Name</td>
+            <td>Regular Price</td>
+        </tr>
+        </thead>
+        <tbody>
+            <% products.map(function(product){ %>
+              <tr>
+                  <td><%= product.id %></td>
+                  <td><%= product.name %></td>
+                  <td><%= product.price %></td>
+              </tr>
+            <% }) %>
+        </tbody>
+    </table>
+</div>
+
+<% include ../includes/footer.ejs %>
